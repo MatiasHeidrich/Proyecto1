@@ -1,5 +1,4 @@
-# El juego debe tener una lista de palabras predefinidas de las cuales se
-# elige una palabra aleatoriamente para que el jugador adivine.
+# Inicio del juego
 from random import randint
 import time
 print("""------------------------------------""")
@@ -8,15 +7,13 @@ print("""------------------------------------
       """)
 time.sleep(1)
 
+#Seleccion de palabras e intentos
 palabras = ["babuino", "sinfonia", "integral", "xilofono", "nariz", "bicicleta"]
 indice_palabras_max = len(palabras) - 1
 indice_aleatorio = randint(0, indice_palabras_max)
 intentos = 6
 
 palabra_aleatoria = palabras[indice_aleatorio] # palabra aleatoria
-
-# El jugador tiene un número limitado de intentos para adivinar la palabra
-# (por ejemplo, 6 intentos).
 
 # Debe mostrar las letras adivinadas y las letras incorrectas.
 correctas = []
@@ -39,7 +36,7 @@ while juego_termino == False:
 
     ind = 0
     existe_letra = False
-    for letra in palabra_aleatoria: # messi ---- M
+    for letra in palabra_aleatoria:
         if letra == letra_ingresada:
             existe_letra = True
             palabra_secreta[ind] = letra_ingresada

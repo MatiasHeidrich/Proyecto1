@@ -1,2 +1,2 @@
-# Proyecto1
-Juego "El Ahorcado"
+# informatorio
+cualquier cosa 
